@@ -18,6 +18,11 @@ class App extends React.Component {
 						type: 'text', defaultValue: 'Enter Something',
 						style: { width: '100%', height: '100%' }
 					},
+					event_listeners: {
+						onClick: 'onClick',
+						onChange: 'onChange',
+						onBlur: 'onBlur'
+					}
 		    }
 		  ]
 		};
@@ -26,7 +31,9 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-				<JsonifiedHtml elementJSON={this.textBoxHtmlJSON}/>
+				<JsonifiedHtml
+					elementJSON={this.textBoxHtmlJSON}
+				/>
 			</div>
 		);
 	}

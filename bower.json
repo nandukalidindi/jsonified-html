@@ -1,0 +1,29 @@
+{
+  "name": "jsonified-html",
+  "version": "0.0.0",
+  "description": "JsonifiedHtml",
+  "main": "dist/jsonified-html.min.js",
+  "homepage": "https://github.com/nandukalidindi/jsonified-html",
+  "authors": [
+    "Nandu Kalidindi"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "react",
+    "react-component"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "src",
+    "node_modules",
+    "example",
+    "test"
+  ]
+}

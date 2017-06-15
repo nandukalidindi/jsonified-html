@@ -2,18 +2,6 @@ import React from 'react';
 
 class JsonifiedHtml extends React.Component {
 
-	onClick(event) {
-		this.props.onClick ? this.props.onClick(event) : null;
-	}
-
-	onChange(event) {
-		this.props.onChange ? this.props.onChange(event) : null;
-	}
-
-	onBlur(event) {
-		this.props.onBlur ? this.props.onBlur(event) : null;
-	}
-
 	buildReactElement(jsonHTML) {
     if(jsonHTML === null) return null;
 
@@ -27,7 +15,7 @@ class JsonifiedHtml extends React.Component {
 
     if(jsonHTML['event_listeners']) {
       Object.keys(jsonHTML['event_listeners']).forEach(function(event_listener) {
-        jsonHTML['attributes'][event_listener] = this[jsonHTML['event_listeners'][event_listener]].bind(this);
+        jsonHTML['attributes'][event_listener] = jsonHTML['event_listeners'][event_listener];
       }.bind(this));
     }
 

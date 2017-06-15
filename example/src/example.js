@@ -19,9 +19,12 @@ class App extends React.Component {
 						style: { width: '100%', height: '100%' }
 					},
 					event_listeners: {
-						onClick: 'onClick',
-						onChange: 'onChange',
-						onBlur: 'onBlur'
+						onClick: function (event) {
+							
+						},
+						onBlur: function (event) {
+
+						}
 					}
 		    }
 		  ]
